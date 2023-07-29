@@ -1,0 +1,97 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #faf8ef;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  text-align: center;
+}
+
+.header {
+  margin-bottom: 20px;
+}
+
+.game-container {
+  border: 5px solid #bbada0;
+  border-radius: 6px;
+  width: 320px;
+  height: 320px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+}
+
+.tile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 28px;
+  font-weight: bold;
+  background-color: #ccc0b3;
+  border-radius: 6px;
+}
+
+.tile.tile-2 {
+  background-color: #a9f9e9;
+}
+
+.tile.tile-4 {
+  background-color: #42ff81;
+}
+
+.tile.tile-8 {
+  background-color: #009903;
+}
+
+.tile.tile-16 {
+  background-color: #ffef8a;
+}
+
+.tile.tile-32 {
+  background-color: #e09eff;
+}
+
+.tile.tile-64 {
+  background-color: #808eff;
+}
+
+.tile.tile-128 {
+  background-color: #662eff;
+}
+
+.tile.tile-256 {
+  background-color: #ffd54d;
+}
+
+.tile.tile-512 {
+  background-color: #ff9b29;
+}
+
+.tile.tile-1024 {
+  background-color: #ff7300;
+}
+
+.tile.tile-2048 {
+  background-color: #ff0000;
+}
+
+/* Style for merged tiles */
+.tile-merged {
+  animation: mergedTile 0.1s linear;
+}
+
+@keyframes mergedTile {
+  0% {
+    transform: scale(1.1);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
