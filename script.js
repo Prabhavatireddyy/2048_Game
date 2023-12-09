@@ -145,28 +145,28 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   
-    // // Function to check if the game is over
-    // function checkGameOver() {
-    //   let isFull = true;
+    // Function to check if the game is over
+    function checkGameOver() {
+      let isFull = true;
   
-    //   for (let row = 0; row < 4; row++) {
-    //     for (let col = 0; col < 4; col++) {
-    //       if (cells[row][col] === 0) {
-    //         isFull = false;
-    //       }
-    //       if (cells[row][col] === 2048) {
-    //         isGameOver = true;
-    //         alert('Congratulations! You reached 2048!');
-    //         return;
-    //       }
-    //     }
-    //   }
+      for (let row = 0; row < 4; row++) {
+        for (let col = 0; col < 4; col++) {
+          if (cells[row][col] === 0) {
+            isFull = false;
+          }
+          if (cells[row][col] === 2048) {
+            isGameOver = true;
+            alert('Congratulations! You reached 2048!');
+            return;
+          }
+        }
+      }
   
-    //   if (isFull) {
-    //     isGameOver = true;
-    //     alert('Game Over! Try again.');
-    //   }
-    // }
+      if (isFull) {
+        isGameOver = true;
+        alert('Game Over! Try again.');
+      }
+    }
   
     // Function to handle keyboard events
     function handleKeyPress(event) {
