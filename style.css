@@ -12,6 +12,30 @@ body {
 .container {
   text-align: center;
 }
+.win-message {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #00ff00; /* You can customize the color */
+  padding: 20px;
+  font-size: 24px;
+  font-weight: bold;
+  display: none;
+}
+
+.win-message.animate {
+  animation: fadeInOut 2s ease-in-out;
+}
+
+@keyframes fadeInOut {
+  0%, 100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
 
 .header {
   margin-bottom: 20px;
@@ -42,42 +66,56 @@ body {
 }
 
 .tile.tile-4 {
-  background-color: #42ff81;
+  background-color: #4dffb5;
 }
 
 .tile.tile-8 {
-  background-color: #009903;
+  background-color: #4daaf0;
 }
 
 .tile.tile-16 {
-  background-color: #ffef8a;
+  background-color: #3744d2;
 }
 
 .tile.tile-32 {
-  background-color: #e09eff;
+  background-color: #ffaafb;
 }
 
 .tile.tile-64 {
-  background-color: #808eff;
+  background-color: #fa70ea;
 }
 
 .tile.tile-128 {
-  background-color: #662eff;
+  background-color: #de189c;
 }
 
 .tile.tile-256 {
-  background-color: #ffd54d;
+  background-color: #d7fb75;
 }
 
 .tile.tile-512 {
-  background-color: #ff9b29;
+  background-color: #7d9901;
 }
 
 .tile.tile-1024 {
-  background-color: #ff7300;
+  background-color: #f74272;
 }
 
 .tile.tile-2048 {
-  background-color: #ff0000;
+  background-color: #cb53fb;
 }
 
+/* Style for merged tiles */
+.tile-merged {
+  animation: mergedTile 0.1s linear;
+}
+
+@keyframes mergedTile {
+  0% {
+    transform: scale(1.1);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
