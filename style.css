@@ -8,7 +8,9 @@ body {
   align-items: center;
   height: 100vh;
 }
-
+p{
+  color: rgb(189, 96, 62)
+}
 .container {
   text-align: center;
 }
