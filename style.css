@@ -9,6 +9,15 @@ body {
   height: 100vh;
 }
 
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background-color: transparent;
+    padding: 10px 0;
+}
+
 .container {
   text-align: center;
 }
